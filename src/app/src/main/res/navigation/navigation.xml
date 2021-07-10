@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.gabrielbmoro.crazymath.presentation.screens.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/goToHomeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gabrielbmoro.crazymath.presentation.screens.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/goToSignInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/goToCrossNumberGame"
+            app:destination="@id/crossNumberFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/crossNumberFragment"
+        android:name="com.gabrielbmoro.crazymath.presentation.screens.crossNumber.CrossNumberFragment"
+        android:label="GameZoneFragment"
+        tools:layout="@layout/fragment_cross_number">
+        <argument
+            android:name="userLevelValue"
+            app:argType="integer" />
+        <action
+            android:id="@+id/goToUserFeedbackFragment"
+            app:destination="@id/userFeedbackFragment" />
+        <action
+            android:id="@+id/goToResultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.gabrielbmoro.crazymath.presentation.screens.home.signIn.SignInFragment"
+        android:label="SignInFragment"
+        tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/userFeedbackFragment"
+        android:name="com.gabrielbmoro.crazymath.presentation.screens.crossNumber.userFeedback.UserFeedbackFragment"
+        android:label="UserFeedbackFragment"
+        tools:layout="@layout/fragment_user_feedback" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.gabrielbmoro.crazymath.presentation.screens.crossNumber.result.ResultFragment"
+        android:label="ResultFragment"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="points"
+            app:argType="long" />
+        <argument
+            android:name="wasSendToRank"
+            app:argType="boolean" />
+    </fragment>
+</navigation>

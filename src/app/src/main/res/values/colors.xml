@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#388E3C</color>
+    <color name="colorPrimaryDark">#004D40</color>
+    <color name="colorPrimaryLight">#C5E1A5</color>
+    <color name="colorSecondary">#E64A19</color>
+    <color name="colorSecondaryLight">#FF9800</color>
+    <color name="colorSecondaryLighter">#FFCDD2</color>
+    <color name="colorAccent">#26C6DA</color>
+    <color name="defaultViewBackground">#C8E6C9</color>
+    <color name="selectedViewBackground">#76FF03</color>
+    <color name="correctViewBackground">#00C853</color>
+    <color name="veryPoorScore">#BD2327</color>
+    <color name="textColorMainButton">#FFFFFF</color>
+    <color name="colorFormInput">#141515</color>
+    <color name="colorPreviewText">#E0F7FA</color>
+    <color name="colorNegativeButton">#FFCDD2</color>
+    <color name="colorNegativeButtonText">#D32F2F</color>
+
+    <!-- LevelSliderComponent -->
+    <color name="levelSliderTickColor">@color/colorSecondary</color>
+    <color name="levelSliderThumbColor">@color/colorSecondary</color>
+    <color name="levelSliderColorInactive">@color/colorSecondaryLighter</color>
+    <color name="levelSliderColorActive">@color/colorSecondary</color>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="back_margin_top">12dp</dimen>
+    <dimen name="back_margin_start">16dp</dimen>
+    <dimen name="btn_dimen">56dp</dimen>
+    <dimen name="card_dimen_cell">62dp</dimen>
+    <dimen name="card_dimen_small_cell">20dp</dimen>
+    <dimen name="margin_card">2dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="text_medium">19sp</dimen>
+    <dimen name="text_normal">17sp</dimen>
+    <dimen name="fragment_splash_auxiliary_button_size">120dp</dimen>
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_elevation">0dp</dimen>
+    <dimen name="auxiliary_button_size">60dp</dimen>
+    <dimen name="auxiliary_button_size_half">30dp</dimen>
+    <dimen name="hand_size">50dp</dimen>
+    <dimen name="button_padding">7dp</dimen>
+    <dimen name="preview_min_height">100dp</dimen>
+    <dimen name="preview_margin_bottom">20dp</dimen>
+    <dimen name="screen_horizontal_margin">26dp</dimen>
+</resources>

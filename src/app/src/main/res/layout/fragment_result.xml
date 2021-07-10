@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        style="@style/BackButton"
+        android:layout_width="@dimen/btn_dimen"
+        android:layout_height="@dimen/btn_dimen"
+        android:layout_marginStart="@dimen/screen_horizontal_margin"
+        android:layout_marginTop="@dimen/back_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_rank_position"
+        style="@style/RankPosition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_back"
+        tools:text="1º position" />
+
+    <TextView
+        android:id="@+id/tv_total_points"
+        style="@style/Points"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_rank_position"
+        app:layout_constraintStart_toStartOf="@id/tv_rank_position"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rank_position"
+        tools:text="100 points" />
+
+
+    <ImageView
+        android:id="@+id/iv_rank_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/user_going_to_the_first_place"
+        android:scaleType="centerInside"
+        android:src="@drawable/rank"
+        app:layout_constraintEnd_toEndOf="@+id/tv_total_points"
+        app:layout_constraintStart_toStartOf="@+id/tv_total_points"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_points" />
+
+    <Button
+        android:id="@+id/button_ok"
+        style="@style/SecondaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@android:string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_rank_image" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

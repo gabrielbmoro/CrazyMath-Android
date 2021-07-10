@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CrazyMath</string>
+    <string name="try_again">Try Again</string>
+    <string name="back_option">Back option</string>
+    <string name="email_is_not_valid_error_message">E-mail is not valid message</string>
+    <string name="email">E-mail</string>
+    <string name="play_now">Play now</string>
+    <string name="login_disclaimer">If you want to save your results and compare them with
+        the rank, you need to specify an email here.</string>
+    <string name="click_here">here</string>
+    <string name="splash_screen_welcome_message">Hi, my name is Navo. \nI\'m here to help you to practice mathematics. If you have any feedback about the app or something you would like that the app should have, let me know by sending your message using this button:</string>
+    <string name="button_to_access_navo_assistant">Button to access the assistant called Navo</string>
+    <string name="navo_image_description">Navo is a guinea pig that loves math, and he will teaching you everything that you need to learn.</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="long_press">Long press</string>
+    <string name="start_dragging">Start Dragging</string>
+    <string name="stopwatch_seconds">%1$ds</string>
+    <string name="send">Send</string>
+    <string name="user_going_to_the_first_place">User going to the first place</string>
+    <string name="play">Play</string>
+    <string name="balloon_message_from_navo_mouth">balloon message from Navo\'s mouth</string>
+
+    <!-- LevelSliderComponent -->
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+
+    <!-- ShowResultAlertDialogFragment -->
+    <string name="points">%1$d pts</string>
+    <string name="rank_position">%1$dº position</string>
+
+    <string name="user_feedback_text_hint">Type here your opinion about the app. If you want something more let me know :  )</string>
+
+    <string name="try_again_later">Try again later</string>
+    <string name="thanks_for_your_feedback">Thanks for your feedback.</string>
+
+    <string name="please_type_your_email">Please type your e-mail:</string>
+</resources>

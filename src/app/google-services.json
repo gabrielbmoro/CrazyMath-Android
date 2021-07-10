@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "803628119847",
+    "firebase_url": "https://crazy-math-d4cd7.firebaseio.com",
+    "project_id": "crazy-math-d4cd7",
+    "storage_bucket": "crazy-math-d4cd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803628119847:android:3400354c797ebbae88db02",
+        "android_client_info": {
+          "package_name": "com.gabrielbmoro.crazymath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803628119847-g947pvinpilvrluko5ba9k9u639t9r8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA22vU16u6CRMHS5jwMZEjLxIGj2MnKu8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803628119847-g947pvinpilvrluko5ba9k9u639t9r8i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

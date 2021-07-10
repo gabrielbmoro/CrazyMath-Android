@@ -1,0 +1,65 @@
+{
+  "easy" : {
+    "exampleFirstEquationIndex": 8,
+    "exampleFirstEquationOrientation": 1,
+    "rows": [
+        [
+          "X", "a", "a", "a", "a", "X"
+        ],
+        [
+          "X", "X", "b", "X", "X", "X"
+        ],
+        [
+          "X", "X", "b", "X", "X", "X"
+        ],
+        [
+          "X", "X", "b", "X", "X", "X"
+        ],
+        [
+          "X", "X", "b", "X", "X", "X"
+        ]
+    ]
+  },
+  "medium" : {
+    "exampleFirstEquationIndex": 1,
+    "exampleFirstEquationOrientation": 0,
+    "rows": [
+      [
+        "X", "a", "a", "a", "a", "X"
+      ],
+      [
+        "X", "X", "b", "X", "X", "X"
+      ],
+      [
+        "X", "X", "X", "b", "X", "X"
+      ],
+      [
+        "X", "X", "X", "X", "b", "X"
+      ],
+      [
+        "X", "X", "X", "X", "X", "b"
+      ]
+    ]
+  },
+  "hard": {
+    "exampleFirstEquationIndex": 24,
+    "exampleFirstEquationOrientation": 2,
+    "rows": [
+      [
+        "X", "a", "a", "a", "a", "X"
+      ],
+      [
+        "i", "X", "b", "X", "X", "X"
+      ],
+      [
+        "i", "X", "X", "b", "X", "X"
+      ],
+      [
+        "i", "X", "X", "X", "b", "X"
+      ],
+      [
+        "i", "X", "X", "X", "X", "b"
+      ]
+    ]
+  }
+}

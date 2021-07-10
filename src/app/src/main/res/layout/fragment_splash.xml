@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_splash_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fragment_splash_header_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="@string/navo_image_description"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_guinea_pig_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fragment_splash_welcome_message"
+            style="@style/StoryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fragment_splash_header_image"
+            tools:text="@string/splash_screen_welcome_message" />
+
+        <com.gabrielbmoro.crazymath.presentation.components.NavoImageButtonComponent
+            android:id="@+id/fragment_splash_auxiliary_button"
+            android:layout_width="@dimen/fragment_splash_auxiliary_button_size"
+            android:layout_height="@dimen/fragment_splash_auxiliary_button_size"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/button_to_access_navo_assistant"
+            android:padding="@dimen/button_padding"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_splash_welcome_message"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_splash_welcome_message"
+            app:layout_constraintVertical_bias="0.567"
+            tools:visibility="visible" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

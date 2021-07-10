@@ -1,0 +1,129 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Reference: https://stackoverflow.com/questions/2868047/fullscreen-activity-in-android -->
+    <style name="Base.CrazyMath.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Base.CrazyMath.Text.Body" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Base.CrazyMath.Text.SmallBody" parent="Base.CrazyMath.Text.Body">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="StoryText">
+        <item name="fontFamily">@font/fff_tusj</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Form">
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Text.Form.Input" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/colorFormInput</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="fontFamily">@font/caviar_dreams</item>
+    </style>
+
+    <style name="RankPosition">
+        <item name="fontFamily">@font/fff_tusj</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Points">
+        <item name="fontFamily">@font/fff_tusj</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="PreviewDescription">
+        <item name="android:background">@color/colorPreviewText</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="fontFamily">@font/caviar_dreams</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textColor">@color/textColorMainButton</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/caviar_dreams_bold</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Button">
+        <item name="android:background">@drawable/primary_base_button_effect</item>
+    </style>
+
+    <style name="NegativeButton" parent="Button">
+        <item name="android:textColor">@color/colorNegativeButtonText</item>
+        <item name="android:background">@drawable/negative_base_button_effect</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Button">
+        <item name="android:background">@drawable/secondary_base_button_effect</item>
+    </style>
+
+    <style name="Dialog">
+        <item name="android:padding">20dp</item>
+        <item name="fontFamily">@font/fff_tusj</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/background_assistant_dialog</item>
+    </style>
+
+    <style name="DialogStyle" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">97%</item>
+        <item name="android:windowMinWidthMinor">97%</item>
+    </style>
+
+    <style name="StopwatchComponent">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/caviar_dreams_bold</item>
+    </style>
+
+    <style name="SliderComponent" parent="Widget.MaterialComponents.Slider">
+        <item name="android:theme">@style/Theme.MaterialComponents.DayNight</item>
+        <item name="tickColor">@color/levelSliderTickColor</item>
+        <item name="thumbColor">@color/levelSliderThumbColor</item>
+        <item name="trackColorInactive">@color/levelSliderColorInactive</item>
+        <item name="trackColorActive">@color/levelSliderColorActive</item>
+    </style>
+
+    <style name="SectionTitle" parent="TextAppearance.AppCompat.Headline">
+        <item name="fontFamily">@font/caviar_dreams_bold</item>
+    </style>
+
+    <style name="BackButton">
+        <item name="android:src">@drawable/ic_arrow_back</item>
+        <item name="android:contentDescription">@string/back_option</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_width">@dimen/btn_dimen</item>
+        <item name="android:layout_height">@dimen/btn_dimen</item>
+    </style>
+
+</resources>
