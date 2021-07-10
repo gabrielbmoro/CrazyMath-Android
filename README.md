@@ -5,3 +5,6 @@ CrazyMath is a project for children to practice mathematics as the game. I thoug
 
 ### Problem Target
 - The children that has difficulties in basic mathematics operations.
+
+### Teaser
+- ![img/teaser.webm]
