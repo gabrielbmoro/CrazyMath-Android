@@ -17,6 +17,7 @@
         <activity
             android:name="com.gabrielbmoro.crazymath.presentation.MainActivity"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/Base.CrazyMath.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
