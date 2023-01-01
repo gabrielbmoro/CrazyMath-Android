@@ -38,9 +38,9 @@ class CrossNumberFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentCrossNumberBinding.inflate(inflater, container, false)
 
-        viewModel.liveDataLoading.observe(viewLifecycleOwner, {
+        viewModel.liveDataLoading.observe(viewLifecycleOwner) {
             binding.progressBar.changeStateFrom(it)
-        })
+        }
 
         lifecycle.addObserver(binding.stopwatch)
 

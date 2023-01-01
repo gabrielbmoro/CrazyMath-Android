@@ -20,16 +20,16 @@ class SignInFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentSignInBinding.inflate(inflater, container, false)
 
-        viewModel.liveDataLoading.observe(viewLifecycleOwner, {
+        viewModel.liveDataLoading.observe(viewLifecycleOwner) {
             binding.progressBar.changeStateFrom(it)
             val isNotLoading = !it.peekContent()
             binding.saveButton.isEnabled = isNotLoading
             binding.cancelButton.isEnabled = isNotLoading
-        })
+        }
 
-        viewModel.liveDataOnSuccessEvent.observe(viewLifecycleOwner, {
+        viewModel.liveDataOnSuccessEvent.observe(viewLifecycleOwner) {
             findNavController().popBackStack()
-        })
+        }
 
         binding.ivBack.setOnClickListener {
             activity?.onBackPressed()

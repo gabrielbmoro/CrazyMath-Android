@@ -20,19 +20,20 @@ class UserFeedbackFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentUserFeedbackBinding.inflate(inflater, container, false)
 
-        viewModel.liveDataLoading.observe(viewLifecycleOwner, {
+        viewModel.liveDataLoading.observe(viewLifecycleOwner) {
             binding.progressBar.changeStateFrom(it)
-        })
+        }
 
-        viewModel.sendUserFeedbackResult.observe(viewLifecycleOwner, { event ->
+        viewModel.sendUserFeedbackResult.observe(viewLifecycleOwner) { event ->
             val result = event.peekContent()
             if (result) {
-                Toast.makeText(context, R.string.thanks_for_your_feedback, Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, R.string.thanks_for_your_feedback, Toast.LENGTH_SHORT)
+                    .show()
                 findNavController().popBackStack()
             } else {
                 Toast.makeText(context, R.string.try_again_later, Toast.LENGTH_SHORT).show()
             }
-        })
+        }
 
         binding.ivBack.setOnClickListener {
             activity?.onBackPressed()
