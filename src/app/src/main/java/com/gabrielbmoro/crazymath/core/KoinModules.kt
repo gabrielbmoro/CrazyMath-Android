@@ -27,8 +27,6 @@ val repositoryModule = module {
                 localDataSourceRepositoryImpl = LocalDataSourceRepositoryImpl(
                         androidContext().getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)
                 ),
-                firebaseAuthRepositoryImpl = FirebaseAuthRepositoryImpl(),
-                firebaseFireStoreRepositoryImpl = FirebaseFireStoreImpl(),
                 assetsDataSourceRepositoryImpl = AssetsDataSourceRepositoryImpl(
                         androidContext().resources,
                         Gson()

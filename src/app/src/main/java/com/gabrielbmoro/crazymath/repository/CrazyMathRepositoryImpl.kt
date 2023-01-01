@@ -6,18 +6,18 @@ import com.gabrielbmoro.crazymath.domain.model.PreviewConfig
 import javax.inject.Inject
 
 open class CrazyMathRepositoryImpl @Inject constructor(
-        private val firebaseFireStoreRepositoryImpl: FirebaseFireStoreImpl,
         private val localDataSourceRepositoryImpl: LocalDataSourceRepositoryImpl,
-        private val firebaseAuthRepositoryImpl: FirebaseAuthRepositoryImpl,
         private val assetsDataSourceRepositoryImpl: AssetsDataSourceRepositoryImpl
 ) : CrazyMathRepository {
 
     override suspend fun signIn(email: String): String? {
-        return firebaseAuthRepositoryImpl.signIn(email)
+        // TODO: Fake returned value just to be able to run the app
+        return "Fake User ID"
     }
 
     override suspend fun signUp(email: String): String? {
-        return firebaseAuthRepositoryImpl.signUp(email)
+        // TODO: Fake returned value just to be able to run the app
+        return "Fake User ID"
     }
 
     override fun saveToken(token: String): Boolean {
@@ -25,7 +25,8 @@ open class CrazyMathRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getPoints(): List<Long> {
-        return firebaseFireStoreRepositoryImpl.getPoints()
+        // TODO: Fake returned value just to be able to run the app
+        return listOf(100L, 121L)
     }
 
     override fun getToken(): String? {
@@ -33,7 +34,8 @@ open class CrazyMathRepositoryImpl @Inject constructor(
     }
 
     override suspend fun sendUsersFeedback(userMessage: String): Boolean {
-        return firebaseFireStoreRepositoryImpl.sendUserFeedback(userMessage)
+        // TODO: Fake returned value just to be able to run the app
+        return true
     }
 
     override fun logout(): Boolean {
@@ -49,15 +51,13 @@ open class CrazyMathRepositoryImpl @Inject constructor(
     }
 
     override suspend fun sendCrossNumberResult(firebaseUID: String, timestamp: Long, points: Long): Boolean {
-        return firebaseFireStoreRepositoryImpl.sendCrossNumberResult(
-                firebaseUID = firebaseUID,
-                timestamp = timestamp,
-                points = points
-        )
+        // TODO: Fake returned value just to be able to run the app
+        return true
     }
 
     override fun getUserId(): String? {
-        return firebaseAuthRepositoryImpl.userID()
+        // TODO: Fake returned value just to be able to run the app
+        return "Fake User Id"
     }
 
     override fun getCrossNumberConfigurations(): List<CrossNumberConfig> {
