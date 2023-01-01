@@ -6,7 +6,6 @@ import com.gabrielbmoro.crazymath.repository.*
 import com.gabrielbmoro.crazymath.repository.assets.AssetsDataSourceRepositoryImpl
 import com.gabrielbmoro.crazymath.domain.model.UserLevel
 import com.gabrielbmoro.crazymath.domain.usecase.*
-import com.gabrielbmoro.crazymath.helpers.AdsHandler
 import com.gabrielbmoro.crazymath.helpers.MediaPlayerHandler
 import com.gabrielbmoro.crazymath.helpers.VibrationHandler
 import com.gabrielbmoro.crazymath.presentation.screens.crossNumber.CrossNumberViewModel
@@ -44,9 +43,6 @@ val helpersModule = module {
     }
     factory {
         VibrationHandler()
-    }
-    single {
-        AdsHandler()
     }
 }
 

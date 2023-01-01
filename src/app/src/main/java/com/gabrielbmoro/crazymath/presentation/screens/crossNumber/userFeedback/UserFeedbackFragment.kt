@@ -17,7 +17,7 @@ class UserFeedbackFragment : Fragment() {
     private lateinit var binding: FragmentUserFeedbackBinding
     private val viewModel: UserFeedbackViewModel by viewModel()
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentUserFeedbackBinding.inflate(inflater, container, false)
 
         viewModel.liveDataLoading.observe(viewLifecycleOwner) {

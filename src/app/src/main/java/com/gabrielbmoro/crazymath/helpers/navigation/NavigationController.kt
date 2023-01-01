@@ -16,16 +16,31 @@ open class NavigationController {
     }
 
     fun listening(lifecycleOwner: LifecycleOwner, navController: NavController) {
-        navigationSubject.observe(lifecycleOwner, { evt ->
+        navigationSubject.observe(lifecycleOwner) { evt ->
             evt.getContentIfNotHandled()?.let { event ->
                 when (event.first) {
-                    NavigationEvent.GO_TO_CROSS_NUMBER_GAME -> navController.navigate(R.id.crossNumberFragment, event.second)
-                    NavigationEvent.GO_TO_HOME_SCREEN -> navController.navigate(R.id.goToHomeFragment, event.second)
-                    NavigationEvent.GO_TO_SIGN_IN -> navController.navigate(R.id.goToSignInFragment, event.second)
-                    NavigationEvent.GO_TO_USER_FEEDBACK -> navController.navigate(R.id.goToUserFeedbackFragment, event.second)
-                    NavigationEvent.GO_TO_RANK_RESULT -> navController.navigate(R.id.goToResultFragment, event.second)
+                    NavigationEvent.GO_TO_CROSS_NUMBER_GAME -> navController.navigate(
+                        R.id.crossNumberFragment,
+                        event.second
+                    )
+                    NavigationEvent.GO_TO_HOME_SCREEN -> navController.navigate(
+                        R.id.goToHomeFragment,
+                        event.second
+                    )
+                    NavigationEvent.GO_TO_SIGN_IN -> navController.navigate(
+                        R.id.goToSignInFragment,
+                        event.second
+                    )
+                    NavigationEvent.GO_TO_USER_FEEDBACK -> navController.navigate(
+                        R.id.goToUserFeedbackFragment,
+                        event.second
+                    )
+                    NavigationEvent.GO_TO_RANK_RESULT -> navController.navigate(
+                        R.id.goToResultFragment,
+                        event.second
+                    )
                 }
             }
-        })
+        }
     }
 }

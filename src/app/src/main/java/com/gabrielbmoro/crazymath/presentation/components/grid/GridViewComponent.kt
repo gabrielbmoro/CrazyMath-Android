@@ -91,7 +91,7 @@ class GridViewComponent @JvmOverloads constructor(
     companion object {
         const val ORIENTATION_HORIZONTAL = 0
         const val ORIENTATION_VERTICAL = 1
-        const val ORIENTATION_VERTICAL_INVERSE = 2;
+        const val ORIENTATION_VERTICAL_INVERSE = 2
     }
 
 }

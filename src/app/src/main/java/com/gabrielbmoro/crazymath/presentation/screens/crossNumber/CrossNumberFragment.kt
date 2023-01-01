@@ -10,7 +10,6 @@ import androidx.navigation.fragment.navArgs
 import com.gabrielbmoro.crazymath.R
 import com.gabrielbmoro.crazymath.databinding.FragmentCrossNumberBinding
 import com.gabrielbmoro.crazymath.domain.model.UserLevel
-import com.gabrielbmoro.crazymath.helpers.AdsHandler
 import com.gabrielbmoro.crazymath.helpers.MediaPlayerHandler
 import com.gabrielbmoro.crazymath.helpers.VibrationHandler
 import com.gabrielbmoro.crazymath.presentation.extensions.changeStateFrom
@@ -21,14 +20,13 @@ import org.koin.core.parameter.parametersOf
 class CrossNumberFragment : Fragment() {
 
     private val args: CrossNumberFragmentArgs by navArgs()
-    private val viewModel: CrossNumberViewModel by viewModel() {
+    private val viewModel: CrossNumberViewModel by viewModel {
         val userLevel = UserLevel.fromValue(args.userLevelValue)
                 ?: throw IllegalArgumentException("userLevel is required")
         parametersOf(userLevel)
     }
     private lateinit var binding: FragmentCrossNumberBinding
 
-    private val adsHandler: AdsHandler by inject()
     private val mediaPlayerHandler: MediaPlayerHandler by inject()
     private val vibratorHandler: VibrationHandler by inject()
 
@@ -85,7 +83,6 @@ class CrossNumberFragment : Fragment() {
                 listener = {
                     finishGame()
                     defaultMode()
-                    adsHandler.showIfIsReady(requireContext())
                 },
                 startDrawableRes = R.drawable.ic_air_plane
         )

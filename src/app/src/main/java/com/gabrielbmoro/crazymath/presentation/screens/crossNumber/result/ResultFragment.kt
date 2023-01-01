@@ -27,13 +27,13 @@ class ResultFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentResultBinding.inflate(inflater, container, false)
 
-        viewModel.liveDataLoading.observe(viewLifecycleOwner, {
+        viewModel.liveDataLoading.observe(viewLifecycleOwner) {
             binding.progressBar.changeStateFrom(it)
-        })
+        }
 
-        viewModel.rankPosition.observe(viewLifecycleOwner, {
+        viewModel.rankPosition.observe(viewLifecycleOwner) {
             binding.tvRankPosition.text = getString(R.string.rank_position, it.peekContent())
-        })
+        }
 
         binding.ivBack.setOnClickListener {
             activity?.onBackPressed()

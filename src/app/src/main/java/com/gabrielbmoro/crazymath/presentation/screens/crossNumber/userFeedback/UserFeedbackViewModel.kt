@@ -3,11 +3,9 @@ package com.gabrielbmoro.crazymath.presentation.screens.crossNumber.userFeedback
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.gabrielbmoro.crazymath.domain.usecase.SendUserFeedbackUseCase
 import com.gabrielbmoro.crazymath.core.Event
 import com.gabrielbmoro.crazymath.core.extensions.async
-import kotlinx.coroutines.launch
 import timber.log.Timber
 
 class UserFeedbackViewModel constructor(

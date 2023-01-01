@@ -34,23 +34,23 @@ class HomeFragment : Fragment() {
             viewModel.goToCrossNumberGame()
         }
 
-        viewModel.showErrorMessage.observe(viewLifecycleOwner, { message ->
+        viewModel.showErrorMessage.observe(viewLifecycleOwner) { message ->
             Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
-        })
+        }
 
-        viewModel.preview.observe(viewLifecycleOwner, { previewEvent ->
+        viewModel.preview.observe(viewLifecycleOwner) { previewEvent ->
             val startIndex = viewModel.exampleFirstEquationIndex
             val orientationCode = viewModel.orientationCode
             val preview = previewEvent.peekContent()
 
             if (startIndex != null && orientationCode != null) {
                 binding.preview.start(
-                        previewElements = preview,
-                        startIndex = startIndex,
-                        orientationCode = orientationCode
+                    previewElements = preview,
+                    startIndex = startIndex,
+                    orientationCode = orientationCode
                 )
             }
-        })
+        }
 
         changeLevelVisualState(binding.sliderLevel.currentLevel)
 
