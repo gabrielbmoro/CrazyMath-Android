@@ -105,26 +105,24 @@ class GridTouchListener(
 
 
     // region gesture_detector callbacks
-    override fun onDown(p0: MotionEvent?) = false
+    override fun onDown(p0: MotionEvent) = false
 
-    override fun onFling(p0: MotionEvent?, p1: MotionEvent?, p2: Float, p3: Float) = false
+    override fun onFling(p0: MotionEvent, p1: MotionEvent, p2: Float, p3: Float) = false
 
-    override fun onLongPress(p0: MotionEvent?) {
+    override fun onLongPress(e: MotionEvent) {
         resetSelection()
 
         _onTouchEventIsAvailable = true
-        p0?.let { e ->
-            val adapterPosition = getAdapterPosition(x = e.x, y = e.y, rv = recyclerView)
-            onSelectElement(adapterPosition)
-        }
 
+        val adapterPosition = getAdapterPosition(x = e.x, y = e.y, rv = recyclerView)
+        onSelectElement(adapterPosition)
     }
 
-    override fun onScroll(p0: MotionEvent?, p1: MotionEvent?, p2: Float, p3: Float) = false
+    override fun onScroll(p0: MotionEvent, p1: MotionEvent, p2: Float, p3: Float) = false
 
-    override fun onShowPress(p0: MotionEvent?) {}
+    override fun onShowPress(p0: MotionEvent) {}
 
-    override fun onSingleTapUp(p0: MotionEvent?) = false
+    override fun onSingleTapUp(p0: MotionEvent) = false
     // endregion
 
     companion object {
