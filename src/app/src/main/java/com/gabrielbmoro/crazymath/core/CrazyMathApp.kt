@@ -16,7 +16,6 @@ open class CrazyMathApp : Application() {
             androidLogger()
             androidContext(this@CrazyMathApp)
             koin.loadModules(listOf(helpersModule, repositoryModule, useCaseModule, viewModelModule))
-            koin.createRootScope()
         }
 
         if (BuildConfig.DEBUG) {
